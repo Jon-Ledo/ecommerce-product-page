@@ -6,22 +6,22 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
   
-  <title>Frontend Mentor | E-commerce product page</title>
+  <title>Sneakers</title>
 </head>
 <body>
-  <div class="container">
     <!-- nav bar -->
-    <section class="navigation">
+    <section class="navigation container">
       <nav class="navbar flex-sb">
-        <div class="flex">
+        <div class="nav-left flex-sb">
           <button class="toggle-nav">
-            <img src="./images/icon-menu.svg" alt="">
+            <img src="./images/icon-menu.svg">
           </button>
           <div class="logo">
             <img src="./images/logo.svg" alt="logo">
           </div>
-          <ul class="flex-sa nav-links">
+          <ul class="nav-links">
             <li><a href="#" class="nav-link">Collections</a></li>
             <li><a href="#" class="nav-link">Men</a></li>
             <li><a href="#" class="nav-link">Women</a></li>
@@ -30,12 +30,12 @@
           </ul>
         </div>
         <!-- cart -->
-        <div class="flex">
-          <div class="cart">
+        <div class="nav-right flex">
+          <div class="cart flex">
             <img src="./images/icon-cart.svg" alt="cart">
           </div>
           <!-- avatar -->
-          <div class="user">
+          <div class="user flex">
             <img src="./images/image-avatar.png" alt="user avatar">
           </div>
         </div>
@@ -71,7 +71,7 @@
             <span>50%</span>
           </div>
           <div>
-            <h3>$250.00</>
+            <h3>$250.00</h3>
           </div>
           <!-- add to cart -->
           <div class="flex">
@@ -83,7 +83,21 @@
         </aside>
       </section>
     </div>
-  </div>
+    <!-- overlay -->
+    <div class="sidebar-overlay">
+      <aside class="sidebar flex">
+        <button class="sidebar-close-btn">
+          <img src="./images/icon-close.svg">
+        </button>
+        <ul class="flex sidebar-links">
+          <li><a href="#" class="nav-link">Collections</a></li>
+          <li><a href="#" class="nav-link">Men</a></li>
+          <li><a href="#" class="nav-link">Women</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </aside>
+    </div>
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
